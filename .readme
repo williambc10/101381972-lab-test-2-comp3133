@@ -1,0 +1,17 @@
+COMP 3133 - Lab Test 2
+
+Student ID: 101381972
+Name: William Cham Zhang
+Submission Date: April 2, 2025
+Course: COMP 3133 - Fullstack Development II
+Instructor: Pritesh Patel
+
+This Angular application displays a list of SpaceX missions using the SpaceX REST API. Users can:
+
+View mission details
+Filter missions by launch year, launch success, and landing success
+Navigate to a detailed view using Angular routing
+Experience a clean UI with Angular Material
+
+See submission screenshots on D2L.
+

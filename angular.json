@@ -16,6 +16,7 @@
             "outputPath": "dist/101381972-lab-test-2-comp3133",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/101381972-lab-test-2-comp3133/",
             "polyfills": [
               "zone.js"
             ],
@@ -30,12 +31,7 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -96,6 +92,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
