@@ -1,0 +1,14 @@
+<h3>Filter by Launch Year:</h3>
+<input type="text" [(ngModel)]="launchYear" (ngModelChange)="emitFilters()" placeholder="e.g. 2020" />
+<button (click)="emitFilters()">Filter</button>
+
+<h3>Launch</h3>
+<label><input type="radio" name="launch" value="true" [(ngModel)]="launchSuccess" (change)="emitFilters()" /> Successful</label>
+<label><input type="radio" name="launch" value="false" [(ngModel)]="launchSuccess" (change)="emitFilters()" /> Failed</label>
+
+<h3>Landing</h3>
+<label><input type="radio" name="land" value="true" [(ngModel)]="landSuccess" (change)="emitFilters()" /> Successful</label>
+<label><input type="radio" name="land" value="false" [(ngModel)]="landSuccess" (change)="emitFilters()" /> Failed</label>
+
+<br /><br />
+<button (click)="onReset()">Reset Filters</button>

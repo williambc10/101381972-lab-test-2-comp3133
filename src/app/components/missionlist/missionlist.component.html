@@ -1,0 +1,19 @@
+<h1>Mission List</h1>
+
+<app-mission-filter 
+  (applyFilters)="applyFilters($event)" 
+  (reset)="resetFilters()">
+</app-mission-filter>
+
+@for (mission of launches; track mission.flight_number) {
+  <a [routerLink]="['/details', mission.flight_number]" style="text-decoration: none; color: inherit;">
+    <div style="background-color: lightblue; padding: 1rem; margin: 1rem 0; border: 1px solid black">
+      <img width="100" [src]="mission.links.mission_patch_small" />
+      <h2>{{ mission.mission_name }}</h2>
+      <h3>{{ mission.launch_year }}</h3>
+      <p>{{ mission.details }}</p>
+    </div>
+  </a>
+}@empty {
+  <h3>No missions available</h3>
+}
